@@ -60,6 +60,20 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        combo_esc {
+            bindings = <&kp ESC>;
+            key-positions = <0 1>;
+        };
+
+        tilde {
+            bindings = <&kp TILDE>;
+            key-positions = <10 11>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
