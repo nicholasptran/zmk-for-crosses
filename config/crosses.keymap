@@ -58,6 +58,13 @@
 
             label = "MACRO_CTRL_KP";
         };
+
+        csharp_lambda: csharp_lambda {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE &kp EQUAL &kp GT &kp SPACE>;
+            label = "CSHARP_LAMBDA";
+        };
     };
 
     combos {
@@ -71,6 +78,12 @@
         tilde {
             bindings = <&kp TILDE>;
             key-positions = <10 11>;
+        };
+
+        csharp_lambda {
+            bindings = <&csharp_lambda>;
+            key-positions = <48 22>;
+            layers = <0>;
         };
     };
 
