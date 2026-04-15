@@ -89,11 +89,11 @@
 
         scroll_layer {
             bindings = <
-&trans           &kp F1   &kp F2   &kp F3                &kp F4                 &kp F5    &kp F6     &kp F7  &kp F8  &kp F9  &kp F10    &kp F11
-&trans           &kp Q    &ctrl W  &kp E                 &kp R                  &kp T     &kp PSCRN  &kp N7  &kp N8  &kp N9  &kp EQUAL  &kp F12
-&ctrl BACKSPACE  &ctrl A  &kp S    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans    &trans     &kp N4  &kp N5  &kp N6  &trans     &trans
-&kp LCTRL        &ctrl Z  &ctrl X  &ctrl C               &ctrl V                &trans    &trans     &kp N1  &kp N2  &kp N3  &trans     &trans
-                                   &trans                &trans                 &trans    &trans     &trans  &kp N0
+&trans           &kp F1   &kp F2   &kp F3                       &kp F4                         &kp F5           &kp F6     &kp F7  &kp F8  &kp F9  &kp F10    &kp F11
+&trans           &kp Q    &ctrl W  &mt LEFT_BRACKET LEFT_BRACE  &mt RIGHT_BRACKET RIGHT_BRACE  &kp LC(LS(T))    &kp PSCRN  &kp N7  &kp N8  &kp N9  &kp EQUAL  &kp F12
+&ctrl BACKSPACE  &ctrl A  &ctrl S  &kp LEFT_PARENTHESIS         &kp RIGHT_PARENTHESIS          &trans           &trans     &kp N4  &kp N5  &kp N6  &trans     &trans
+&kp LCTRL        &ctrl Z  &ctrl X  &ctrl C                      &ctrl V                        &trans           &trans     &kp N1  &kp N2  &kp N3  &trans     &trans
+                                   &trans                       &trans                         &trans           &trans     &trans  &kp N0
             >;
 
             label = "SCROLL";
