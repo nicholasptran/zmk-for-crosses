@@ -132,7 +132,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &kp PSCRN  &trans    &kp UP    &kp EQUAL  &trans     &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans     &kp LEFT  &kp DOWN  &kp RIGHT  &kp EQUAL  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans    &trans    &trans     &trans     &trans
-                        &trans  &trans  &mo 4     &trans     &trans    &trans
+                        &trans  &mo 4   &mo 4     &trans     &trans    &trans
             >;
         };
 
