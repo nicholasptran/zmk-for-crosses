@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: crosses}
 layers:
-  Base:
-  - ESC
+  QWRT:
+  - '-'
   - '1'
   - '2'
   - '3'
@@ -12,7 +12,7 @@ layers:
   - '8'
   - '9'
   - '0'
-  - BSPC
+  - '='
   - Tab
   - Q
   - W
@@ -25,7 +25,7 @@ layers:
   - O
   - P
   - BSLH
-  - Shift
+  - BSPC
   - A
   - S
   - D
@@ -38,7 +38,7 @@ layers:
   - ;
   - ''''
   - Ctrl
-  - {t: Z, h: Mouse}
+  - {t: Z, h: arrow}
   - X
   - C
   - V
@@ -47,15 +47,15 @@ layers:
   - M
   - ','
   - .
-  - {t: /, h: Mouse}
-  - ESC
-  - LEFT WIN
+  - FSLH
+  - Shift
   - Alt
-  - {t: Space, h: Lower}
-  - {t: Enter, h: Raise}
-  - BSPC
+  - {t: Cmd, h: SCROLL}
+  - {t: Space, h: MOUSE}
+  - Enter
+  - arrow
   - Alt
-  Lower:
+  MOUSE:
   - Sft+1
   - Sft+2
   - Sft+3
@@ -107,10 +107,11 @@ layers:
   - ''
   - ''
   - {type: held}
-  - F11
+  - ''
   - F12
   - Space
-  Raise:
+  SCROLL:
+  - {t: ▽, type: trans}
   - F1
   - F2
   - F3
@@ -122,101 +123,163 @@ layers:
   - F9
   - F10
   - F11
-  - F12
-  - Tab
+  - {t: ▽, type: trans}
   - Q
-  - W
-  - E
-  - R
-  - T
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - BSLH
-  - Shift
-  - A
-  - S
-  - D
-  - F
-  - G
-  - H
-  - J
-  - UP ARROW
-  - L
-  - ;
-  - ''''
+  - '&ctrl W'
+  - {t: '{', h: '['}
+  - {t: '}', h: ']'}
+  - Ctl+Sft+T
+  - PSCRN
+  - '7'
+  - '8'
+  - '9'
+  - '='
+  - F12
+  - '&ctrl BACKSPACE'
+  - '&ctrl A'
+  - '&ctrl S'
+  - (
+  - )
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '4'
+  - '5'
+  - '6'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - Ctrl
-  - Z
-  - X
-  - C
-  - V
-  - B
-  - N
-  - LEFT ARROW
-  - DOWN ARROW
-  - RIGHT ARROW
-  - /
-  - ESC
-  - ''
-  - ''
-  - ''
+  - '&ctrl Z'
+  - '&ctrl X'
+  - '&ctrl C'
+  - '&ctrl V'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '1'
+  - '2'
+  - '3'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
-  - ''
-  - ''
-  Mouse:
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '3'}
-  - ''
-  - BT CLR
-  - BT CLR
-  - ''
-  - {t: BT, h: '2'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '0'}
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '0'
+  arrow:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - PSCRN
+  - {t: ▽, type: trans}
+  - ↑
+  - '='
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ←
+  - ↓
+  - →
+  - '='
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
-  - ''
-  - ''
-  - ''
-  - ''
-  - '&studio_unlock'
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - '&mkp MCLK'
-  - '&mkp LCLK'
-  - '&mkp RCLK'
-  - '&mkp RCLK'
-  - '&mkp LCLK'
-  - '&mkp MCLK'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - arrow_layer2
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  arrow_layer2:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - PgUp
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Home
+  - PgDn
+  - End
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+combos:
+- p: [0, 1]
+  k: ESC
+- p: [10, 11]
+  k: '~'
+- p: [48, 22]
+  k: '&csharp_lambda'
+  l: [QWRT]
